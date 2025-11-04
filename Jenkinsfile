@@ -11,7 +11,7 @@ pipeline {
     stage('Install Python'){
       steps{
         echo 'Installing Python'
-        sh 'python3 --version || sudo apt-get install && sudo apt-get install -y python3'
+        sh 'python3 --version'
       }
     }
     stage('Run python'){
@@ -22,3 +22,4 @@ pipeline {
     }
   }
 }
+
